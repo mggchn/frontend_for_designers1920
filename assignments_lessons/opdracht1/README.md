@@ -16,11 +16,11 @@ Leg de interface uit. In de demo heb je de interface design principles 04 & 11 v
 ### HTML
 In de HTML code te zien, bestaat deze voornamelijk uit divs. Hier heb ik bewust voor gekozen, zodat de vlakken van de divs naast elkaar komen te staan als een kolom. Deze kolommen heb ik telkens een class gegeven genaamd "container".
 
-Binnen de eerste container bij regel 13 heb ik een div gemaakt voor de "side-nav", deze is voor de filters. Deze heb ik gevormd door er een <ul> van te maken. 
+Binnen de eerste container bij regel 13 heb ik een div gemaakt voor de "side-nav", deze is voor de filters. Deze heb ik gevormd door er een ul van te maken. 
 
 Bij de volgende drie containers (regel 24, 29 en 34) komen de zogenaamde foto's. In elke van deze 3 containers zitten er weer 3 divs die de foto aanduiden. Deze heb ik zichtbaar laten maken door ze elk een andere kleur te geven in CSS. 
 
-Als laatst heb ik bovenaan de </body> bij regel 40 de link naar mijn javascript.
+Als laatst heb ik bovenaan de /body bij regel 40 de link naar mijn javascript.
 
 ### CSS
 
@@ -38,5 +38,5 @@ Binnen de function zit er dus een if/else statement. Er wordt eigenlijk met de c
 
 als de rood_status == false, dan zal hij door de for loop gaan die binnen de if statement is gemaakt. Deze zegt het volgende:
 
-als er in de classList van foto "rood" ( == true) bevat (dit wordt getriggered door .classList.contains), dan wordt de 
+als er in de classList van foto "rood" ( == true) bevat (dit wordt getriggered door .classList.contains), dan worden 
 
