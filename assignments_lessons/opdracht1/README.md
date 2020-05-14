@@ -34,9 +34,12 @@ Bij regel 5 heb ik een status gemaakt voor de const rood. Deze heb ik een boolea
 
 Op regel 6 is er een onclick function aangemaakt met een if/else statement. Binnen de if/else zit er een for loop. Deze gaat altijd door de code heen wanneer er wordt geklikt op rood_filter.
 
+
 Binnen de function zit er dus een if/else statement. Er wordt eigenlijk met de code bedoeld:
 
 als de rood_status == false, dan zal hij door de for loop gaan die binnen de if statement is gemaakt. Deze zegt het volgende:
 
-als er in de classList van foto "rood" ( == true) bevat (dit wordt getriggered door .classList.contains), dan worden 
+als er in de classList van foto "rood" ( == true) bevat (dit wordt getriggered door .classList.contains), dan worden de rode foto's als het ware geblokkeerd en blijven de staan. De overige foto's verdwijnen dan. rood_status wordt dan true, want er is al een keertje op geklikt.
+
+Bij de else statement binnen de function zegt hij eigenlijk precies het tegenovergestelde van de if statement. als .classList.contains("rood") == false, dan wordt hij geblokkeerd. Dit betekent dan eigenlijk dat alle foto's geblokkeerd worden en op de pagina wordt weergegeven.
 

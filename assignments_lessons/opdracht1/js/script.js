@@ -9,6 +9,7 @@ rood_filter.onclick = function() {
         for (i; i < foto.length; i++) {
             if (foto[i].classList.contains("rood") == true) {
                 foto[i].style.display = "block";
+                rood_filter.style.display = "red";
             } else {
                 foto[i].style.display = "none";
             }
