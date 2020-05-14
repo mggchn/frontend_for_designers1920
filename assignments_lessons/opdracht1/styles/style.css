@@ -12,15 +12,61 @@
   margin-top: 20px;
 }
 
-.side-nav {
-  min-width: 100px;
+h1, p {
+  padding-top: 30px;
   padding-left: 30px;
 }
 
+p {
+  padding-top: 5px;
+}
+
+.side-nav {
+  min-width: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ul {
+  list-style-type: none
+
+}
+
+ul li {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#blauw_filter {
+  background-color: blue;
+}
+
+#geel_filter {
+  background-color: yellow;
+  color: black;
+}
+
+#oranje_filter {
+  background-color: orange;
+  color: black;
+}
+
+#groen_filter {
+  background-color: green;
+}
+
+#rood_filter {
+  background-color: red;
+}
+
 .foto {
-  width: 20rem;
+  width: 15rem;
   height: 10rem;
   margin-bottom: 3rem;
+  margin-right: 2rem;
 }
 
 .foto.rood {
