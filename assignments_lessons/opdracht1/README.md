@@ -8,6 +8,8 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 # Case: foto's filteren op kleur
 Voor dit project heb ik voor de case: 'foto's filteren op kleur' gekozen. Hierbij is het de bedoeling dat je een aantal foto's hebt met verschillende kleuren en alleen de foto's weergeeft van de gekozen kleur van het filter. De overige kleuren die er niet bij horen zullen dan verdwijnen.
 
+Bekijk hier [mijn uitgewerkte opdracht](https://mggchn.github.io/frontend_for_designers1920/assignments_lessons/opdracht1/)
+
 ## interface
 Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
 
