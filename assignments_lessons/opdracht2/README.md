@@ -5,7 +5,7 @@ Werk een functionaliteit uit die je kunt bedienen met 'click' en nog een user in
 Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
-# Project titel
+# Mijn vakantiefoto's in een carousel
 Voor dit project heb ik voor de case: 'Mijn vakantiefoto's gekozen. De opdracht hierbij is dat je een carousel van foto's maakt en door de foto's kan bladeren d.m.v. de knoppen die naar links en rechts gaan. Het bekijken van de foto's zou ook bediend moeten worden met de linker- en rechterpijlen van het toetsbord.
 
 Bekijk hier [mijn uitgewerkte opdracht](https://mggchn.github.io/frontend_for_designers1920/assignments_lessons/opdracht2/).
@@ -18,4 +18,8 @@ In de demo heb je interface design principles 04, 08 & 09 van [Principles of Use
 In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
 
 ## code
-Leg de code uit.
+### HTML
+
+### CSS
+
+### JAVASCRIPT
