@@ -6,8 +6,9 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+Voor dit project heb ik voor de case: 'Mijn vakantiefoto's gekozen. De opdracht hierbij is dat je een carousel van foto's maakt en door de foto's kan bladeren d.m.v. de knoppen die naar links en rechts gaan. Het bekijken van de foto's zou ook bediend moeten worden met de linker- en rechterpijlen van het toetsbord.
+
+Bekijk hier [mijn uitgewerkte opdracht](https://mggchn.github.io/frontend_for_designers1920/assignments_lessons/opdracht2/).
 
 ## interface
 Leg de interface uit.
