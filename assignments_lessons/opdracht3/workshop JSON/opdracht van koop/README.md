@@ -7,7 +7,7 @@ Als allereerst is er een tutorial van JSON gevolgd die op MDN staat. Deze legt s
 Bekijk hier de [tutorial op MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON).
 
 
-# Opdracht van Koop
+## Opdracht van Koop
 Na de tutorial te hebben gevolgd, is de opdracht gegeven om een pagina op te maken die informatie over allerlei films bevat. Deze informatie haal je dus uit het JSON bestand. 
 
 Bekijk hier [mijn uitgewerkte opdracht](https://mggchn.github.io/frontend_for_designers1920/assignments_lessons/opdracht3/workshop%20JSON/opdracht%20van%20koop/movies.html).
