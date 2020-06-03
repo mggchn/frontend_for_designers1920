@@ -11,11 +11,6 @@ body {
 
 /* HEADER STYLES */
 
-h1,
-h2 {
-  /* font-family: 'Faster One', cursive; */
-}
-
 h1 {
   font-size: 4rem;
   /* text-align: left; */
@@ -49,7 +44,6 @@ section > article {
   margin-right: 10rem;
   width: auto;
 }
-
 
 section ul {
   margin-top: 0;
