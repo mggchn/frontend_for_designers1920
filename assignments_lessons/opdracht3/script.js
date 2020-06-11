@@ -2,7 +2,7 @@
 const section = document.querySelector('section');
 
 // Laad het JSON bestand in m.b.v. de URL en de regels code (5-10)
-let requestURL = 'http://www.theaudiodb.com/api/v1/json/5d656564694f534d656564/mostloved.php?format=track';
+let requestURL = 'https://raw.githubusercontent.com/mggchn/frontend_for_designers1920/master/assignments_lessons/opdracht3/mostlovedsongs.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -14,7 +14,7 @@ request.onload = function () {
 }
 
 function showSongs(jsonObj) {
-	const details = jsonObj.loved;
+	const details = jsonObj;
 	// console.log(details);
     
     // Als allereerst worden er in deze for loop hieronder allerlei elementen aangemaakt die nodig zijn om de content te tonen. Deze loops worden aangemaakt om door als het ware door elke array te 'loopen'
