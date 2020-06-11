@@ -9,6 +9,7 @@ request.responseType = 'json';
 request.send();
 request.onload = function () {
     const movies = request.response;
+    // console.log(movies);
     // De functie showsMovies zorgt ervoor dat hier de inhoud wordt aangemaakt en weergegeven in de HTML
     showMovies(movies);
 }
@@ -19,6 +20,7 @@ function showMovies(jsonObj) {
     // Als allereerst worden er in deze for loop hieronder allerlei elementen aangemaakt die nodig zijn om de content te tonen. Deze loops worden aangemaakt om door als het ware door elke array te 'loopen'
     for (let i = 0; i < details.length; i++) {
         // console.log(details[i]);
+        
         // Article aanmaken voor de filmdetails
         const myArticle = document.createElement('article');
         // h2 aanmaken voor id
