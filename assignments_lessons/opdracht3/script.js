@@ -14,12 +14,12 @@ request.onload = function () {
 }
 
 function showSongs(jsonObj) {
-	const details = jsonObj;
+	const details = jsonObj.loved;
 	// console.log(details);
     
     // Als allereerst worden er in deze for loop hieronder allerlei elementen aangemaakt die nodig zijn om de content te tonen. Deze loops worden aangemaakt om door als het ware door elke array te 'loopen'
     for (let i = 0; i < 5; i++) {
-		console.log(details);
+		console.log(details[i]);
 
 		const myArticle = document.createElement('article');
 		const myTitle = document.createElement('h2');
@@ -29,7 +29,7 @@ function showSongs(jsonObj) {
 		const myAlbum = document.createElement('p');
 		const myGenre = document.createElement('p');
 
-		myTitle.textContent = details[i].strTrack;
+		myTitle.textContent = details.strTrack;
 		console.log(myTitle.textContent);
 
 		myArticle.appendChild(myTitle);
