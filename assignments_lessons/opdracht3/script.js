@@ -36,7 +36,9 @@ function showSongs(jsonObj) {
 		myAudio.src = details[i].strAudio;
 		console.log(myAudio.src);
 
+
 		myArticle.appendChild(myTitle);
+		myArticle.appendChild(myAudio);
 		section.appendChild(myArticle);
 	}
 }
