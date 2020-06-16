@@ -22,15 +22,19 @@ function showSongs(jsonObj) {
 		console.log(details[i]);
 
 		const myArticle = document.createElement('article');
-		const myTitle = document.createElement('h2');
+		const myTitle = document.createElement('h1');
+		const mySongTitle = document.createElement('h2');
+		const myArtist = document.createElement('p');
 		const myPlays = document.createElement('p');
 		const myImg = document.createElement('img');
-		const myArtist = document.createElement('p');
+		const myAudio = document.createElement('audio');
 		const myAlbum = document.createElement('p');
 		const myGenre = document.createElement('p');
-
-		myTitle.textContent = details.strTrack;
-		console.log(myTitle.textContent);
+		
+		mySongTitle.textContent = details[i].strTrack;
+		// console.log(mySongTitle.textContent);
+		myAudio.src = details[i].strAudio;
+		console.log(myAudio.src);
 
 		myArticle.appendChild(myTitle);
 		section.appendChild(myArticle);
