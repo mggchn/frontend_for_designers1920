@@ -1,4 +1,6 @@
-// Body declareren door deze aan te roepen vanuit de HTML
+///// ALS EERST JSON DATA INLADEN /////
+
+// Elementen declareren door deze aan te roepen vanuit de HTML
 const body = document.querySelector('body');
 
 // Laad het JSON bestand in m.b.v. de URL en de regels code (5-14)
@@ -22,10 +24,23 @@ function showSongs(jsonObj) {
 	myCarouselContainer.classList.add('carousel-container');
 	const myCarouselSlider = document.createElement('ul');
 	myCarouselSlider.classList.add('carousel-slider');
-    
+
+	///// CONTAINER EN DE BIJBEHORENDE BUTTONS AANMAKEN /////
+	// Elementen voor de container van de buttons
+	const myButtonContainer = document.createElement('div');
+	myButtonContainer.classList.add('button-container');
+
+	// Elementen voor de buttons
+	const previousButton = document.createElement('button');
+	previousButton.classList.add('previous-button');
+	previousButton.innerHTML = '&#8249';
+	const nextButton = document.createElement('button');
+	nextButton.classList.add('next-button');
+	nextButton.innerHTML = '&#8250';
+
     // Als allereerst worden er in deze for loop hieronder allerlei elementen aangemaakt die nodig zijn om de content te tonen. Deze loops worden aangemaakt om door als het ware door elke array te 'loopen'. 
     for (let i = 0; i < details.length; i++) {
-		console.log(details[i]);
+		// console.log(details[i]);
 
 		// Elementen voor de containers waar de informatie van het lied in komt te staan
 		const myArticle = document.createElement('article');
@@ -45,37 +60,50 @@ function showSongs(jsonObj) {
 		
 		// Aanroepen van JSON data door deze te koppelen aan de elementen voor de informatie aan het lied
 		myImg.src = details[i].strTrackThumb;
-		// console.log(myImg.src);
 		myPlays.textContent = details[i].intTotalPlays + " plays";
-		// console.log(myPlays.textContent);
 		mySongTitle.textContent = details[i].strTrack;
-		// console.log(mySongTitle.textContent);
 		myArtist.textContent = details[i].strArtist;
-		// console.log(myArtist.textContent);
 		myAlbumGenre.textContent = details[i].strAlbum + " — " + details[i].strGenre;
-		// console.log(myAlbumGenre.textContent);
 
-		// De <div class="carousel-container"> die in de <body> gestopt moet worden
+		// De <div> die in de <body> gestopt moet worden
 		body.appendChild(myCarouselContainer);
+		body.appendChild(myButtonContainer);
 
 		// De <div class="carousel-slider"> die in de <div class="carousel-container"> gestopt moet worden
 		myCarouselContainer.appendChild(myCarouselSlider);
-
+		
 		// De <article> die in de <ul class="carousel-slider"> gestopt moet worden
 		myCarouselSlider.appendChild(myArticle);
-
+		
 		// De <div> die in de <article> gestopt moeten worden
 		myArticle.appendChild(myAlbumCover);
 		myArticle.appendChild(mySongDetails);
-
-		// De album cover die in de <div class="albumcover" gestopt moet
+		
+		// De album cover die in de <div class="albumcover" gestopt moet worden
 		myAlbumCover.appendChild(myImg);
-
+		
 		// De details van het lied die in de <div class="songdetails"> gestopt moet worden
 		mySongDetails.appendChild(myPlays);
 		mySongDetails.appendChild(mySongTitle);
 		mySongDetails.appendChild(mySongTitle);
 		mySongDetails.appendChild(myArtist);
 		mySongDetails.appendChild(myAlbumGenre);
+
+		//  De <button> die in de <div class="button-container"> gestopt moet worden
+		myButtonContainer.appendChild(previousButton);
+		myButtonContainer.appendChild(nextButton);
 	}
+}
+
+///// DE CAROUSEL CLICKABLE KRIJGEN /////
+
+const songs = document.querySelector('article');
+const previousButton = document.querySelector('.previous-button');
+const nextButton = document.querySelector('next-button');
+console.log(nextButton);
+nextButton.addEventListener('click', nextSong());
+
+function nextSong() {
+	currentSong = (currentSong < 11) ? currentSong + 1 : 11;
+    songs.style.transform = 'translate(' + (currentSong) * -25 + '%)';
 }
