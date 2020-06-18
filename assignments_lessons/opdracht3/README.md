@@ -115,6 +115,42 @@ function controls(e) {
 	}
 ```
 
+### HTML
+Na het toevoegen van alle elementen ziet de HTML structuur er als volgt uit:
+```html
+<body>
+    <h1>Top 50 Most Loved Songs</h1>
+    <p id="introduction">These are the Top 50 most loved songs of alltime. Make use of the left/right buttons or the
+        arrowkeys on your keyboard to navigate through the songs. </p>
+    <div class="carousel-container">
+        <ul class="carousel-slider">
+            <div class="allsongs">
+                <article class="articlesongs">
+                    <div class="albumcover">
+                        <img>
+                    </div>
+                    <div class="songdetails">
+                        <p class="plays"></p>
+                        <h2></h2>
+                        <p></p>
+                        <p class="albumgenre"></p>
+                    </div>
+                </article>
+
+            </div>
+
+    </div>
+    </div>
+    </ul>
+    </div>
+    <div class="button-container">
+        <button id="previousButton">&#8249</button>
+        <button id="nextButton">&#8250</button>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+```
+
 En voilà! Het project is nu gereed om te bekijken en te gebruiken :+1:.
 
 ## Bericht aan Koop
@@ -123,4 +159,4 @@ Tijdens de eindbeoordeling hebben we kort besproken dat mijn ontwerp wel aan de 
 1. Voor de Blank State: ik heb de pagina eigenlijk als een Ideal State gemaakt. Hoe zou ik dan de Blank State moeten maken? Moet ik daarvoor `element.classList.add()` en `element.classList.remove()` gebruiken?  
 2. Heb je eventueel nog inspiratie voor een Blank State die ik kan verwerken in mijn ontwerp?
 
-Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep. Bedankt voor de hulp en lessen! :simple_smile: :sparkles:
+Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep. Bedankt voor de hulp en lessen! :sparkles:
