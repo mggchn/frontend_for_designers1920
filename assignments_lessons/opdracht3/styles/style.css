@@ -1,0 +1,277 @@
+/***********************************
+    STIJLING BEGINT BIJ REGEL 102 
+************************************/
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+/***********************
+    inladen van fonts
+************************/
+@font-face {
+  font-family: 'basier_circlebold';
+  src: url('../fonts/Basier-Circle-bold-webfont/');
+  src: url('../fonts/Basier-Circle-bold-webfont/?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-bold-webfont/basiercircle-bold-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-bold-webfont/basiercircle-bold-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-bold-webfont/basiercircle-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'basier_circlebold_italic';
+  src: url('../fonts/Basier-Circle-bolditalic-webfont/basiercircle-bolditalic-webfont.eot');
+  src: url('../fonts/Basier-Circle-bolditalic-webfont/basiercircle-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-bolditalic-webfont/basiercircle-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-bolditalic-webfont/basiercircle-bolditalic-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-bolditalic-webfont/basiercircle-bolditalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'basier_circlemedium';
+  src: url('../fonts/Basier-Circle-medium-webfont/basiercircle-medium-webfont.eot');
+  src: url('../fonts/Basier-Circle-medium-webfont/basiercircle-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-medium-webfont/basiercircle-medium-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-medium-webfont/basiercircle-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'basier_circlemedium_italic';
+  src: url('../fonts/Basier-Circle-mediumitalic-webfont/basiercircle-mediumitalic-webfont.eot');
+  src: url('../fonts/Basier-Circle-mediumitalic-webfont/basiercircle-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-mediumitalic-webfont/basiercircle-mediumitalic-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-mediumitalic-webfont/basiercircle-mediumitalic-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-mediumitalic-webfont/basiercircle-mediumitalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'basier_circleregular';
+  src: url('../fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.eot');
+  src: url('../fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'basier_circleregular_italic';
+  src: url('../fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.eot');
+  src: url('../fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'basier_circlesemibold';
+  src: url('../fonts/Basier-Circle-semibold-webfont/basiercircle-semibold-webfont.eot');
+  src: url('../fonts/Basier-Circle-semibold-webfont/basiercircle-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-semibold-webfont/basiercircle-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-semibold-webfont/basiercircle-semibold-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-semibold-webfont/basiercircle-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'basier_circlesemibold_italic';
+  src: url('../fonts/Basier-Circle-semibolditalic-webfont/basiercircle-semibolditalic-webfont.eot');
+  src: url('../fonts/Basier-Circle-semibolditalic-webfont/basiercircle-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Basier-Circle-semibolditalic-webfont/basiercircle-semibolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/Basier-Circle-semibolditalic-webfont/basiercircle-semibolditalic-webfont.woff') format('woff'),
+       url('../fonts/Basier-Circle-semibolditalic-webfont/basiercircle-semibolditalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***************************
+stijling van headings
+****************************/
+h1 {
+  font-family: basier_circlebold;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  /* background-color: pink; */
+}
+
+h2 {
+  font-family: basier_circlebold;
+  font-size: 1.5rem;
+}
+
+/********************************************************
+    stijling van containers (sections, articles, divs) 
+*********************************************************/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin-bottom: 5rem;
+  /* background-color: pink; */
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+.allsongs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0 auto; */
+  margin-top: 3rem;
+  margin-right: 3rem;
+  width: 1000px;
+  /* height: 150px; */
+  box-shadow: 0 10px 18px 0 rgba(0,58,150,.12);
+  transition: .5s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  /* background-color: blue; */
+}
+
+article:hover {
+  box-shadow: 0 10px 18px 0 rgba(0,58,150,.3);
+  transition-delay: .5s;
+  -webkit-transition-delay: 0s;
+  transform: scale(1.05);
+}
+
+.albumcover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* background-color: pink; */
+}
+
+.songdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: pink; */
+  width: 300px;
+}
+
+/*********************************************
+    stijling van de content binnen de <div>
+**********************************************/
+p {
+  font-family: basier_circleregular;
+  font-size: 1.5rem;
+  /* text-transform: uppercase; */
+}
+
+p:nth-of-type(1) {
+  margin-bottom: 0.4rem;
+  font-family: basier_circlesemibold;
+  font-size: 0.8rem;
+  color: rgba(60, 60, 67, 0.6);
+  text-transform: uppercase;
+
+}
+
+.albumgenre {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: rgba(60, 60, 67, 0.6);
+}
+
+img {
+  width: 100px;
+}
+
+img:first-child {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://m.media-amazon.com/images/I/81KdUNa+OoL._SS500_.jpg) no-repeat;
+  width: 100px;
+  height: 100px;
+  /* background-color: blue; */
+}
+
+/******************************
+    stijling van de buttons
+*******************************/
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+  padding: 1rem 2rem;
+  /* background-color: pink; */
+}
+
+button {
+  display: block;
+  font-family: basier_circlebold;
+  font-size: 1.3rem;
+  color: black;
+  background-color: white;
+  margin: 0 0.5rem;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(60, 60, 67, 0.214);
+  box-shadow: 0 5px 10px 0 rgba(0, 58, 150, 0.15);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(41, 47, 54);
+  border: rgba(41, 47, 54);
+  box-shadow: 0 10px 18px 0 rgba(41, 47, 54, 0.3);
+  transition-delay: .5s;
+  -webkit-transition-delay: 0s;
+}
+
+/************
+    overig
+*************/
+
+#introduction {
+  font-family: basier_circleregular;
+  color: black;
+  font-size: 1.3rem;
+  text-transform: initial;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: -2rem;
+  /* background-color: pink; */
+}
