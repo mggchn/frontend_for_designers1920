@@ -11,6 +11,10 @@ De carousel is navigeerbaar met behulp van de links/rechts knoppen onder de lied
 
 De data die ik voor dit project heb gebruikt, is te vinden in [dit JSON file](https://www.theaudiodb.com/api/v1/json/5d656564694f534d656564/mostloved.php?format=track&format=track).
 
+Bekijk hier [mijn uitgewerkte opdracht](https://mggchn.github.io/frontend_for_designers1920/assignments_lessons/opdracht3/).
+
+
+
 
 ## Principles of User Interface Design
 In mijn ontwerp heb ik interface design principles 04, 08, 09 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Deze zijn hieronder toegelicht:
