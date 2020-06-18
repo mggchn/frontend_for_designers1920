@@ -159,4 +159,5 @@ Tijdens de eindbeoordeling hebben we kort besproken dat mijn ontwerp wel aan de 
 1. Voor de Blank State: ik heb de pagina eigenlijk als een Ideal State gemaakt. Hoe zou ik dan de Blank State moeten maken? Moet ik daarvoor `element.classList.add()` en `element.classList.remove()` gebruiken?  
 2. Heb je eventueel nog inspiratie voor een Blank State die ik kan verwerken in mijn ontwerp?
 
-Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep. Bedankt voor de hulp en lessen! :sparkles:
+Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep. 
+Bedankt voor de hulp en lessen! :sparkles:
