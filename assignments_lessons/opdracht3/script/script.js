@@ -14,14 +14,11 @@ request.responseType = 'json';
 request.send();
 request.onload = function () {
 	const songs = request.response;
-	// console.log(songs);
 	showSongs(songs);
-	showOther();
 }
 
 function showSongs(jsonObj) {
 	var details = jsonObj.loved;
-	// console.log(details);
 
 	// Elementen voor de slider waar de containers in de <section> komen te zitten
 	const myCarouselContainer = document.createElement('div');
@@ -114,18 +111,14 @@ var position = 0;
 // Als de slider naar links gaat, is de positie -1. Hij zal dan -50% naar links verschuiven.
 previousButton.onclick = function () {
 	position = (position > 0) ? position - 1 : 0;
-	// console.log(position);
 	divSongs.style.transform = 'translate(calc(' + (position) * -50 + '%)';
-	// console.log(divSongs.style.transform);
 }
 
 // Als de slider naar rechts gaat, is de positie +1. Hij zal dan 50% naar rechts verschuiven.
 // Ik geef hier een positie mee van 40. Dit betekent dat hij stopt bij de 40e klik, oftewel: einde van de carousel.
 nextButton.onclick = function () {
 	position = (position < 40) ? position + 1 : 40;
-	// console.log(position);
 	divSongs.style.transform = 'translate(calc(' + (position) * -50 + '%)';
-	// console.log(divSongs.style.transform);
 }
 
 // De slider laten bewegen met de pijltjes van het toetsenbord.
