@@ -64,7 +64,6 @@ request.onload = function () {
 }
 ```
 
-
 2. Functie aanmaken met daarin een `for` loop om de gewenste JSON data aan te kunnen roepen.
 ```javascript
 function showSongs(jsonObj) {
@@ -162,7 +161,7 @@ Na het toevoegen van alle elementen ziet de HTML structuur er als volgt uit:
 Voor de CSS zijn er een aantal belangrijke keuzes gemaakt om de look-and-feel van een carousel te krijgen die er nu staat:
 
 
-* `html` en `body`
+•  `html` en `body`.
 
 In mijn project wilde ik dat de pagina niet groter werd dan het scherm van de browser en dat hij niet scrollbaar was met de mousepad. Dit heb ik opgelost met onderstaande code:
 
@@ -174,9 +173,10 @@ In mijn project wilde ik dat de pagina niet groter werd dan het scherm van de br
 ```
 
 
-* De liedjes naast elkaar – horizontaal – krijgen.
+• De liedjes naast elkaar – horizontaal – krijgen.
 
-Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar in een horizontale lijn te plaatsen. Dit heb ik opgelost met onderstaande code:
+Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar in een horizontale lijn te plaatsen. 
+Dit heb ik opgelost met onderstaande code:
 ```css
 .allsongs {
   display: flex;
@@ -188,7 +188,7 @@ Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar
 ```
 
 
-* Foto en tekst op dezelfde regel naast elkaar.
+• Foto en tekst op dezelfde regel naast elkaar.
 
 Voor het ontwerp wilde ik links in het vak de foto van het album en rechts daarvan de informatie van het lied weergegeven. Ik heb deze voor beide stukken genest in een `div`. Deze twee heb ik weer genest in een `article`, zodat deze op `display: flex` gezet kon worden.
 ```css
@@ -199,7 +199,7 @@ article {
 ```
 
 
-* Buttons naast elkaar.
+• Buttons naast elkaar.
 
 Bovenstaande manier heb ik ook toegepast aan de buttons en in het midden van de pagina geplaatst:
 ```css
@@ -217,5 +217,6 @@ Tijdens de eindbeoordeling hebben we kort besproken dat mijn ontwerp wel aan de 
 1. Voor de Blank State: ik heb de pagina eigenlijk als een Ideal State gemaakt. Hoe zou ik dan de Blank State moeten maken? Moet ik daarvoor `element.classList.add()` en `element.classList.remove()` gebruiken?  
 2. Heb je eventueel nog inspiratie voor een Blank State die ik kan verwerken in mijn ontwerp?
 
-Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep. 
+Ongeacht het thuiswerken, vond ik dat de manier van lesgeven super soepel en fijn verliep.
+
 Bedankt voor de hulp en lessen! :sparkles:
