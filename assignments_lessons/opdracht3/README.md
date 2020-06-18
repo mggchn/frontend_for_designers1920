@@ -49,6 +49,7 @@ De Ideal State is bereikt wanneer de gebruiker succesvol door de liedjes kan nav
 ### Javascript
 Voor deze opdracht was het de bedoeling dat je data uit een JSON file haalt in Javascript en deze weergeeft op je eigen HTML pagina. Daarna kan je met die aangeroepen data interactie toevoegen door eventListeners te gebruiken. Dit ging als volgt:
 
+
 1. Data laden d.m.v. XMLHttpRequest.
 ```javascript
 let requestURL = 'https://raw.githubusercontent.com/mggchn/frontend_for_designers1920/master/assignments_lessons/opdracht3/mostlovedsongs.json';
@@ -63,6 +64,7 @@ request.onload = function () {
 }
 ```
 
+
 2. Functie aanmaken met daarin een `for` loop om de gewenste JSON data aan te kunnen roepen.
 ```javascript
 function showSongs(jsonObj) {
@@ -74,18 +76,22 @@ function showSongs(jsonObj) {
 }
 ```
 
+
 3. Elementen aanmaken die in de function worden gestopt. En een class aanmaken om deze te stijlen.
 ```javascript
 const myCarouselContainer = document.createElement('div');
 myCarouselContainer.classList.add('carousel-container');
 ```
 
+
 4. In de `for` loop de gewenste data uit de JSON file aanroepen en appenden.
 ```javascript
 const myArticle = document.createElement('article');
 myCarouselSlider.appendChild(myArticle);
 ```
+
 ---
+
 
 5. Functie voor de linker- en rechter button aanmaken: `.onclick`
 ```javascript
@@ -99,6 +105,7 @@ nextButton.onclick = function () {
 	divSongs.style.transform = 'translate(calc(' + (position) * -50 + '%)';
 }
 ```
+
 
 6. Functie aanmaken om de button te bedienen met het toetsenbord: `keydown`
 ```javascript
@@ -154,8 +161,10 @@ Na het toevoegen van alle elementen ziet de HTML structuur er als volgt uit:
 ### CSS
 Voor de CSS zijn er een aantal belangrijke keuzes gemaakt om de look-and-feel van een carousel te krijgen die er nu staat:
 
+
 * `html` en `body`
- In mijn project wilde ik dat de pagina niet groter werd dan het scherm van de browser en dat hij niet scrollbaar was met de mousepad. Dit heb ik opgelost met onderstaande code:
+
+In mijn project wilde ik dat de pagina niet groter werd dan het scherm van de browser en dat hij niet scrollbaar was met de mousepad. Dit heb ik opgelost met onderstaande code:
 
  ```css
  html, body {
@@ -164,7 +173,9 @@ Voor de CSS zijn er een aantal belangrijke keuzes gemaakt om de look-and-feel va
 }
 ```
 
+
 * De liedjes naast elkaar – horizontaal – krijgen.
+
 Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar in een horizontale lijn te plaatsen. Dit heb ik opgelost met onderstaande code:
 ```css
 .allsongs {
@@ -176,7 +187,9 @@ Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar
 }
 ```
 
+
 * Foto en tekst op dezelfde regel naast elkaar.
+
 Voor het ontwerp wilde ik links in het vak de foto van het album en rechts daarvan de informatie van het lied weergegeven. Ik heb deze voor beide stukken genest in een `div`. Deze twee heb ik weer genest in een `article`, zodat deze op `display: flex` gezet kon worden.
 ```css
 article {
@@ -185,7 +198,9 @@ article {
 }
 ```
 
+
 * Buttons naast elkaar.
+
 Bovenstaande manier heb ik ook toegepast aan de buttons en in het midden van de pagina geplaatst:
 ```css
 .button-container {
