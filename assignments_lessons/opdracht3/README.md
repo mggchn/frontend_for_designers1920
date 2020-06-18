@@ -154,7 +154,7 @@ Na het toevoegen van alle elementen ziet de HTML structuur er als volgt uit:
 ### CSS
 Voor de CSS zijn er een aantal belangrijke keuzes gemaakt om de look-and-feel van een carousel te krijgen die er nu staat:
 
-⋅⋅* `html` en `body`
+* `html` en `body`
  In mijn project wilde ik dat de pagina niet groter werd dan het scherm van de browser en dat hij niet scrollbaar was met de mousepad. Dit heb ik opgelost met onderstaande code:
 
  ```css
@@ -164,7 +164,7 @@ Voor de CSS zijn er een aantal belangrijke keuzes gemaakt om de look-and-feel va
 }
 ```
 
-⋅⋅* De liedjes naast elkaar – horizontaal – krijgen.
+* De liedjes naast elkaar – horizontaal – krijgen.
 Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar in een horizontale lijn te plaatsen. Dit heb ik opgelost met onderstaande code:
 ```css
 .allsongs {
@@ -176,7 +176,7 @@ Voor een carousel is het wel zo handig om alle items in de carousel naast elkaar
 }
 ```
 
-⋅⋅* Foto en tekst op dezelfde regel naast elkaar.
+* Foto en tekst op dezelfde regel naast elkaar.
 Voor het ontwerp wilde ik links in het vak de foto van het album en rechts daarvan de informatie van het lied weergegeven. Ik heb deze voor beide stukken genest in een `div`. Deze twee heb ik weer genest in een `article`, zodat deze op `display: flex` gezet kon worden.
 ```css
 article {
@@ -185,12 +185,13 @@ article {
 }
 ```
 
-⋅⋅* Buttons naast elkaar.
+* Buttons naast elkaar.
 Bovenstaande manier heb ik ook toegepast aan de buttons en in het midden van de pagina geplaatst:
 ```css
 .button-container {
   display: flex;
   justify-content: center;
+}
 ```
 
 En voilà! Het project is nu gereed om te bekijken en te gebruiken :+1:.
