@@ -119,6 +119,11 @@ h2 {
 /********************************************************
     stijling van containers (sections, articles, divs) 
 *********************************************************/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin-bottom: 5rem;
   /* background-color: pink; */
@@ -130,15 +135,12 @@ body {
   /* background-color: pink; */
 }
 
-.carousel-slider {
+.allsongs {
   display: flex;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 5rem 2rem;
-  overflow: scroll;
-  overflow-y: hidden;
-  /* background-color: pink; */
 }
 
 ::-webkit-scrollbar {
@@ -219,7 +221,7 @@ img:first-child {
   background: url(https://m.media-amazon.com/images/I/81KdUNa+OoL._SS500_.jpg) no-repeat;
   width: 100px;
   height: 100px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 /******************************
@@ -228,6 +230,8 @@ img:first-child {
 .button-container {
   display: flex;
   justify-content: center;
+  margin-top: -2rem;
+  padding: 1rem 2rem;
   /* background-color: pink; */
 }
 
@@ -237,10 +241,10 @@ button {
   font-size: 1.3rem;
   color: black;
   background-color: white;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   width: 50px;
   height: 50px;
-  border: 3px solid white;
+  border: 2px solid rgba(60, 60, 67, 0.214);
   box-shadow: 0 5px 10px 0 rgba(0, 58, 150, 0.15);
   transition: all 0.3s ease 0s;
   cursor: pointer;
@@ -248,16 +252,26 @@ button {
 }
 
 button:hover {
-  /* transform: translateY(-5px); */
   color: white;
   background-color: rgba(41, 47, 54);
   border: rgba(41, 47, 54);
   box-shadow: 0 10px 18px 0 rgba(41, 47, 54, 0.3);
   transition-delay: .5s;
   -webkit-transition-delay: 0s;
-  /* transform: scale(1.03); */
 }
 
-.next-button {
-  background-color: pink;
+/************
+    overig
+*************/
+
+#introduction {
+  font-family: basier_circleregular;
+  color: black;
+  font-size: 1.3rem;
+  text-transform: initial;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: -2rem;
+  /* background-color: pink; */
 }
